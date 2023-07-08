@@ -1,41 +1,38 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "./SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "./SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
-    name: "Thankful Thoughts",
-    description:
-      "ThankfulThoughts is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+    name: "Colors",
+    description: "Custom color palette tool.",
+    image: "/p1.png",
+    github: "https://github.com/anthonyjsilva/colors",
+    link: "https://anthonyjsilva.github.io/colors/",
   },
   {
-    name: "PlatoIO",
-    description: "PlatoIO is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+    name: "Vacant Brain",
+    description: "Art gallery.",
+    image: "/p2.jpg",
+    link: "http://vacantbrain.com",
   },
   {
-    name: "Kator Family Photos",
-    description:
-      "Kator Family Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+    name: "Tailwind Static Site",
+    description: "Tailwind and dark mode practice.",
+    image: "/p3.png",
+    github: "https://github.com/anthonyjsilva/tailwind-css-website",
+    link: "https://anthonyjsilva.github.io/tailwind-css-website/",
   },
-]
+];
 
 const ProjectsSection = () => {
   return (
-    <section id="projects">
-      <h1 className="my-10 text-center font-bold text-4xl">
-        Projects
-        <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
+    <section id="projects" className="mb-32	">
+      <h1 className="uppercase my-10 text-center font-bold text-4xl">
+        Projects 💼
+        <hr className="w-64 h-1 mx-auto my-4 bg-blue border-0 rounded"></hr>
       </h1>
 
       <div className="flex flex-col space-y-28">
@@ -56,21 +53,25 @@ const ProjectsSection = () => {
                     </Link>
                   </div>
                   <div className="mt-8 md:w-1/2">
-                    <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                    <h1 className="uppercase text-2xl font-extrabold mb-0">
+                      {project.name}
+                    </h1>
+                    <p className="font-extralight text-xl italic leading-loose my-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}
                     </p>
                     <div className="flex flex-row align-bottom space-x-4">
-                      <Link href={project.github} target="_blank">
-                        <BsGithub
-                          size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
-                        />
-                      </Link>
+                      {project.github && (
+                        <Link href={project.github} target="_blank">
+                          <BsGithub
+                            size={30}
+                            className="hover:-translate-y-1 transition-transform cursor-pointer hover:text-blue"
+                          />
+                        </Link>
+                      )}
                       <Link href={project.link} target="_blank">
                         <BsArrowUpRightSquare
                           size={30}
-                          className="hover:-translate-y-1 transition-transform cursor-pointer"
+                          className="hover:-translate-y-1 transition-transform cursor-pointer hover:text-blue"
                         />
                       </Link>
                     </div>
@@ -78,12 +79,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;

@@ -11,6 +11,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blue: "#18a7ff",
+        white: "#fafafa",
+        "dark-blue": "#0b4c73",
+        "light-gray": "lightgray",
+        gray: "#4e4e4e",
+        "dark-gray": "#3a3a3a",
+      },
       screens: { sm: "480px", md: "768px", lg: "976px", xl: "1440pd" },
       animation: {
         fadeIn: "fadeIn 1.5s",
@@ -36,11 +44,11 @@ module.exports = {
           to: { transform: "translateY(0)" },
         },
         bounce: {
-          from: { transform: "translateY(10px)" },
+          from: { transform: "translateY(5px)" },
           to: { transform: "translateY(0)" },
         },
       },
     },
   },
   plugins: [],
-}
+};
