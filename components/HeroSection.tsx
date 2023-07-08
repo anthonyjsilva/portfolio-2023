@@ -26,8 +26,8 @@ const HeroSection = () => {
             <span className="font-semibold text-blue">
               {`Frontend Developer `}
             </span>
-            based in San Antonio, TX. Creating software that makes a positive
-            impact in people's lives.
+            {`based in San Antonio, TX. Creating software that makes a positive
+            impact in people's lives.`}
           </p>
 
           <Link
