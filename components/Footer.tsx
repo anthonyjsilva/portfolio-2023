@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="flex flex-row items-center justify-center space-x-1 dark:text-neutral-100">
           © 2023 Anthony Silva<a href="/" className="hover:underline"></a>
         </div>
-        <div className="flex flex-row items-center justify-center space-x-2 mb-1">
+        <div className="flex flex-row items-center justify-center space-x-2 my-1">
           <a
             href="https://github.com/anthonyjsilva"
             rel="noreferrer"
@@ -50,7 +50,7 @@ const Footer = () => {
 
           <a href="mailto:ajsilva@utexas.edu">
             <CgMail
-              className="mr-32 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
               size={30}
             />
           </a>

@@ -6,8 +6,6 @@ import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
 import { RiMoonFill, RiSunLine } from "react-icons/ri";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
-import { CgMail } from "react-icons/cg";
 
 interface NavItem {
   label: string;
@@ -22,6 +20,10 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: "About",
     page: "about",
+  },
+  {
+    label: "Experience",
+    page: "experience",
   },
   {
     label: "Projects",
@@ -65,35 +67,6 @@ export default function Navbar() {
             }`}
           >
             <div className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <a
-                href="https://github.com/anthonyjsilva"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <AiOutlineGithub
-                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
-                  size={30}
-                />
-              </a>
-
-              <a
-                href="https://www.linkedin.com/in/anthonyjsilva/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                <AiOutlineLinkedin
-                  className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
-                  size={30}
-                />
-              </a>
-
-              <a href="mailto:ajsilva@utexas.edu">
-                <CgMail
-                  className="mr-32 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
-                  size={30}
-                />
-              </a>
-
               {NAV_ITEMS.map((item, idx) => {
                 return (
                   <Link
@@ -123,7 +96,7 @@ export default function Navbar() {
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl hover:text-blue dark:hover:text-blue"
+                  className="bg-slate-100 p-2 rounded-xl text-dark-gray hover:text-blue dark:hover:text-blue"
                 >
                   <RiMoonFill size={25} />
                 </button>

@@ -1,74 +1,38 @@
 import React from "react";
-import Image from "next/image";
-import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
-import { SiCss3 } from "react-icons/si";
-import {
-  BiLogoJavascript,
-  BiLogoTypescript,
-  BiLogoReact,
-  BiLogoTailwindCss,
-  BiLogoSass,
-  BiLogoRedux,
-  BiLogoNodejs,
-} from "react-icons/bi";
-import { TbBrandNextjs } from "react-icons/tb";
-import { FaGitAlt } from "react-icons/fa";
-import { SiSemanticuireact } from "react-icons/si";
+import SectionHeader from "./SectionHeader";
+import SkillBadge from "./SkillBadge";
 
-// text-neutral-500
-const skills = [
-  { skill: "HTML", color: "#e34f26", iconName: AiFillHtml5 },
-  { skill: "CSS", color: "#2965f1", iconName: SiCss3 },
-  {
-    skill: "Tailwind CSS",
-    color: "#06b6d4",
-    iconName: BiLogoTailwindCss,
-  },
-  {
-    skill: "SASS",
-    color: "#06b6d4",
-    iconName: BiLogoSass,
-  },
-  {
-    skill: "Semantic UI",
-    color: "#06b6d4",
-    iconName: SiSemanticuireact,
-  },
-
-  { skill: "JavaScript", color: "#f7df1e", iconName: BiLogoJavascript },
-  { skill: "React", color: "#00d8ff", iconName: BiLogoReact },
-  { skill: "Node.js", color: "#00d8ff", iconName: BiLogoNodejs },
-  {
-    skill: "Redux",
-    color: "#06b6d4",
-    iconName: BiLogoRedux,
-  },
-  { skill: "TypeScript", color: "#3178c6", iconName: BiLogoTypescript },
-  { skill: "Next.js", color: "#fafafa", iconName: TbBrandNextjs },
-  { skill: "Git", color: "#fca326", iconName: FaGitAlt },
-  { skill: "GitHub", color: "#fafafa", iconName: AiFillGithub },
-
-  // { skill: "Figma", color: "#4e4e4e", iconName: AiFillHtml5 },
-  // { skill: "Canva", color: "#4e4e4e", iconName: AiFillHtml5 },
-  // { skill: "Premiere Pro", color: "#4e4e4e", iconName: AiFillHtml5 },
+const frontendSkills = [
+  "html",
+  "css",
+  "sass",
+  "semanticui",
+  "javascript",
+  "react",
+  "jest",
+  "nodejs",
+  "redux",
+  "typescript",
+  "graphql",
+  "apollo",
+  "nextjs",
+  "git",
+  "github",
+  "figma",
 ];
-
+const backendSkills = ["express", "mustache", "handlebars", "mongodb", "mysql"];
+const miscSkills = ["premiere", "aseprite", "gms", "canva", "garageband"];
 const pyramidRows = [3, 4, 6];
 
 const AboutSection = () => {
   return (
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
-        <h1 className="uppercase tracking-widest text-center font-bold text-4xl">
-          About 📖
-          <hr className="w-64 h-1 mx-auto my-4 bg-blue border-0 rounded"></hr>
-        </h1>
+        <SectionHeader>About 📖</SectionHeader>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
-            <h1 className="uppercase text-center text-3xl font-extralight italic tracking-widest mb-4">
-              Backstory
-            </h1>
+            <SectionHeader level={2}>Backstory</SectionHeader>
             <p>
               Hi, my name is Anthony and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
@@ -78,15 +42,15 @@ const AboutSection = () => {
             </p>
             <br />
             <p>
-              I graduated from a coding bootcamp called The Iron Yard in 2017
-              and have been working as a FrontEnd developer specializing in
-              React.
+              In 2017 I graduated from a coding bootcamp called The Iron Yard in
+              Austin TX and have since been working as a FrontEnd developer
+              specializing in React.
             </p>
             <br />
             <p>
               I have a wide range of hobbies and passions that keep me busy.
-              From hiking, traveling, to making YouTube videos, I am always
-              seeking new experiences and love to create things and continue to
+              From hiking, traveling, making YouTube videos, I love creating
+              things. I am always seeking new experiences and want continue to
               push myself to learn new skills.
             </p>
             <br />
@@ -95,31 +59,18 @@ const AboutSection = () => {
               <span className="font-bold text-blue">
                 never stop pushing yourself
               </span>{" "}
-              and that&#39;s what I strive to do. I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              and that&#39;s what I strive to do. I have a passion for learning
+              and a desire to always push the limits of what is possible. I am
+              excited to see where my career takes me and am always open to new
+              opportunities. 🙂
             </p>
           </div>
           <div className="text-center md:w-1/2 ">
-            <h1 className="uppercase text-3xl font-extralight italic tracking-widest mb-4">
-              Skills
-            </h1>
-            <div className="flex flex-wrap flex-row basis-1/3 justify-center z-10">
-              {skills.map((item, idx) => {
-                return (
-                  <p
-                    key={idx}
-                    className=" border-gray dark:border-white border shadow px-4 py-2 mr-2 mt-2 rounded font-semibold"
-                  >
-                    <item.iconName
-                      style={{ borderColor: item.color }}
-                      className={`mx-auto dark:text-white`}
-                      size={30}
-                    />
-                    {item.skill}
-                  </p>
-                );
+            <SectionHeader level={2}>Skills 🛠️</SectionHeader>
+
+            <div className="flex flex-wrap flex-row basis-1/3 justify-center md:justify-end z-10">
+              {frontendSkills.map((skill, idx) => {
+                return <SkillBadge key={idx} value={skill} />;
               })}
             </div>
 

@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import { Link } from "react-scroll/modules";
 import { HiArrowDown } from "react-icons/hi";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { CgMail } from "react-icons/cg";
 
 const HeroSection = () => {
   return (
@@ -30,7 +32,38 @@ const HeroSection = () => {
             impact in people's lives.`}
           </p>
 
-          <Link
+          <div className="flex flex-row justify-center md:justify-start mb-12">
+            <a
+              href="https://github.com/anthonyjsilva"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineGithub
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                size={50}
+              />
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/anthonyjsilva/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <AiOutlineLinkedin
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                size={50}
+              />
+            </a>
+
+            <a href="mailto:ajsilva@utexas.edu">
+              <CgMail
+                className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                size={50}
+              />
+            </a>
+          </div>
+
+          {/* <Link
             to="projects"
             className="uppercase text-white bg-blue font-semibold px-6 py-3 rounded shadow hover:bg-blue-300 cursor-pointer hover:bg-dark-blue"
             activeClass="active"
@@ -40,9 +73,10 @@ const HeroSection = () => {
             duration={500}
           >
             Projects
-          </Link>
+          </Link> */}
         </div>
       </div>
+
       <div className="flex flex-row items-center text-center justify-center cursor-pointer hover:text-blue">
         <Link
           to="about"
