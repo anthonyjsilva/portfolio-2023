@@ -1,6 +1,12 @@
 import React from "react";
 import { AiFillHtml5, AiFillGithub } from "react-icons/ai";
-import { SiCss3, SiHandlebarsdotjs } from "react-icons/si";
+import {
+  SiCss3,
+  SiHandlebarsdotjs,
+  SiMui,
+  SiVercel,
+  SiStorybook,
+} from "react-icons/si";
 import {
   BiLogoJavascript,
   BiLogoTypescript,
@@ -55,8 +61,14 @@ const skillData: SkillDataItem[] = [
   {
     value: "semanticui",
     label: "SemanticUI",
-    color: "#06b6d4",
+    color: "#35bdb2",
     component: SiSemanticuireact,
+  },
+  {
+    value: "materialui",
+    label: "Material UI",
+    color: "#fafafa",
+    component: SiMui,
   },
   {
     value: "figma",
@@ -75,31 +87,31 @@ const skillData: SkillDataItem[] = [
   {
     value: "nodejs",
     label: "Node.js",
-    color: "#00d8ff",
+    color: "#84ba64",
     component: BiLogoNodejs,
   },
   {
     value: "express",
     label: "Express.js",
-    color: "#00d8ff",
+    color: "#fafafa",
     component: SiExpress,
   },
   {
     value: "mustache",
     label: "Mustache",
-    color: "#00d8ff",
+    color: "#fafafa",
     component: SlMustache,
   },
   {
     value: "handlebars",
     label: "Handlebars",
-    color: "#00d8ff",
+    color: "#f0772b",
     component: SiHandlebarsdotjs,
   },
   {
     value: "redux",
     label: "Redux",
-    color: "#06b6d4",
+    color: "#7248b6",
     component: BiLogoRedux,
   },
   {
@@ -145,6 +157,19 @@ const skillData: SkillDataItem[] = [
     color: "#fafafa",
     component: AiFillGithub,
   },
+  {
+    value: "storybook",
+    label: "Storybook",
+    color: "#ff4785",
+    component: SiStorybook,
+  },
+  {
+    value: "vercel",
+    label: "Vercel",
+    color: "#fafafa",
+    component: SiVercel,
+  },
+
   // misc skills below
   {
     value: "premiere",
@@ -160,8 +185,8 @@ const skillData: SkillDataItem[] = [
   },
   {
     value: "gms",
-    label: "Game Maker",
-    color: "#4e4e4e",
+    label: "GameMaker Studio",
+    color: "#00ffff",
     component: BsCodeSlash,
   },
   {

@@ -2,27 +2,25 @@ import React from "react";
 import SectionHeader from "./SectionHeader";
 import SkillBadge from "./SkillBadge";
 
+const basicSkills = ["html", "css", "tailwind", "materialui", "semanticui"];
 const frontendSkills = [
-  "html",
-  "css",
-  "sass",
-  "semanticui",
   "javascript",
-  "react",
-  "jest",
-  "nodejs",
-  "redux",
   "typescript",
-  "graphql",
-  "apollo",
+  "react",
+  "redux",
+  // "jest",
   "nextjs",
+  "nodejs",
+  // "graphql",
+  // "apollo",
+];
+const utilitySkills = [
   "git",
   "github",
-  "figma",
+  //"figma"
 ];
 const backendSkills = ["express", "mustache", "handlebars", "mongodb", "mysql"];
 const miscSkills = ["premiere", "aseprite", "gms", "canva", "garageband"];
-const pyramidRows = [3, 4, 6];
 
 const AboutSection = () => {
   return (
@@ -69,7 +67,13 @@ const AboutSection = () => {
             <SectionHeader level={2}>Skills 🛠️</SectionHeader>
 
             <div className="flex flex-wrap flex-row basis-1/3 justify-center md:justify-end z-10">
+              {basicSkills.map((skill, idx) => {
+                return <SkillBadge key={idx} value={skill} />;
+              })}
               {frontendSkills.map((skill, idx) => {
+                return <SkillBadge key={idx} value={skill} />;
+              })}
+              {utilitySkills.map((skill, idx) => {
                 return <SkillBadge key={idx} value={skill} />;
               })}
             </div>

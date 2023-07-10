@@ -3,6 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 import SlideUp from "./SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
+import { FaItchIo } from "react-icons/fa";
+
 import SectionHeader from "./SectionHeader";
 import SkillBadge from "./SkillBadge";
 
@@ -46,6 +48,13 @@ const projects = [
     skills: ["html", "css", "javascript"],
   },
   {
+    name: "Life's Not Square",
+    description: "2D puzzle adventure game. (Development paused)",
+    image: "/square.png",
+    itch: "https://anthonysilva.itch.io/lifes-not-square",
+    skills: ["gms"],
+  },
+  {
     name: "This website",
     description: "Check out the code on github!",
     image: "/portfolio.png",
@@ -54,7 +63,7 @@ const projects = [
   },
   {
     name: "Vacant Brain",
-    description: "Art gallery.",
+    description: "Minimalist art gallery.",
     image: "/p2.jpg",
     link: "http://vacantbrain.com",
     skills: ["html", "css"],
@@ -120,6 +129,19 @@ const ProjectsSection = () => {
                             className="mb-2 hover:-translate-y-1 transition-transform cursor-pointer hover:text-blue"
                           />
                           View on GitHub
+                        </Link>
+                      )}
+                      {project.itch && (
+                        <Link
+                          className="flex flex-col items-center hover:text-blue"
+                          href={project.itch}
+                          target="_blank"
+                        >
+                          <FaItchIo
+                            size={30}
+                            className="mb-2 hover:-translate-y-1 transition-transform cursor-pointer hover:text-blue"
+                          />
+                          View on Itch.io
                         </Link>
                       )}
                       {project.link && (
