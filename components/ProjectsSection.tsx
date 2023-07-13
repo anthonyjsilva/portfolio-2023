@@ -10,9 +10,17 @@ import SkillBadge from "./SkillBadge";
 
 const projects = [
   {
+    name: "Always Onwards",
+    description: "Minimal blog website using Markdown to write posts.",
+    image: "/minimal-blog.png",
+    github: "https://github.com/anthonyjsilva/minimal-blog",
+    link: "https://blog.anthonyjsilva.com/",
+    skills: ["typescript", "nextjs", "react", "tailwind", "markdown"],
+  },
+  {
     name: "Time left",
     description: "Time left to live visualizer.",
-    image: "/time-left-1.png",
+    image: "/time-left.png",
     github: "https://github.com/anthonyjsilva/time-left-to-live",
     link: "https://anthonyjsilva.github.io/time-left-to-live/",
     skills: ["html", "css", "javascript"],
@@ -154,7 +162,7 @@ const ProjectsSection = () => {
                             size={30}
                             className="mb-2 hover:-translate-y-1 transition-transform cursor-pointer hover:text-blue"
                           />
-                          View live Demo
+                          View live
                         </Link>
                       )}
                     </div>

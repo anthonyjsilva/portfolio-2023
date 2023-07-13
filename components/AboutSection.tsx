@@ -41,7 +41,7 @@ const AboutSection = () => {
             <br />
             <p>
               In 2017 I graduated from a coding bootcamp called The Iron Yard in
-              Austin TX and have since been working as a FrontEnd developer
+              Austin TX and have since been working as a Frontend developer
               specializing in React.
             </p>
             <br />

@@ -6,6 +6,7 @@ import {
   SiMui,
   SiVercel,
   SiStorybook,
+  SiMarkdown,
 } from "react-icons/si";
 import {
   BiLogoJavascript,
@@ -156,6 +157,12 @@ const skillData: SkillDataItem[] = [
     label: "GitHub",
     color: "#fafafa",
     component: AiFillGithub,
+  },
+  {
+    value: "markdown",
+    label: "Markdown",
+    color: "#fafafa",
+    component: SiMarkdown,
   },
   {
     value: "storybook",
