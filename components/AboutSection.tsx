@@ -29,10 +29,9 @@ const AboutSection = () => {
         <SectionHeader>About 📖</SectionHeader>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2 ">
-            <SectionHeader level={2}>Backstory</SectionHeader>
+          <div className="md:w-1/2">
             <p>
-              Hi, my name is Anthony and I am a{" "}
+              Hey, my name is Anthony and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
               <span className="font-bold">{" driven"}</span> software engineer
@@ -63,25 +62,11 @@ const AboutSection = () => {
               opportunities. 🙂
             </p>
           </div>
-          <div className="text-center md:w-1/2 ">
-            <SectionHeader level={2}>Skills 🛠️</SectionHeader>
-
-            <div className="flex flex-wrap flex-row basis-1/3 justify-center md:justify-end z-10">
-              {basicSkills.map((skill, idx) => {
-                return <SkillBadge key={idx} value={skill} />;
-              })}
-              {frontendSkills.map((skill, idx) => {
-                return <SkillBadge key={idx} value={skill} />;
-              })}
-              {utilitySkills.map((skill, idx) => {
-                return <SkillBadge key={idx} value={skill} />;
-              })}
-            </div>
-
+          <div className="md:w-1/2">
             <svg
               id="logo"
               width={"501px"}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
+              className="hidden lg:block lg:relative lg:bottom-8 lg:left-16 lg:z-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
             >

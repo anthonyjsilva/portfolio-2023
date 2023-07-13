@@ -26,7 +26,7 @@ const HeroSection = () => {
           <p className="tracking-widest font-extralight italic my-8 md:text-2xl leading-loose">
             {`I'm a `}
             <span className="font-semibold text-blue">
-              {`Frontend Developer `}
+              {`Frontend Web Developer `}
             </span>
             {`based in San Antonio, TX. Creating software that makes a positive
             impact in people's lives.`}
@@ -39,7 +39,7 @@ const HeroSection = () => {
               target="_blank"
             >
               <AiOutlineGithub
-                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
                 size={50}
               />
             </a>
@@ -50,14 +50,14 @@ const HeroSection = () => {
               target="_blank"
             >
               <AiOutlineLinkedin
-                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
                 size={50}
               />
             </a>
 
             <a href="mailto:ajsilva@utexas.edu">
               <CgMail
-                className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 dark:hover:text-blue"
+                className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
                 size={50}
               />
             </a>

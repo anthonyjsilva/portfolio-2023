@@ -22,6 +22,10 @@ const NAV_ITEMS: Array<NavItem> = [
     page: "about",
   },
   {
+    label: "Skills",
+    page: "skills",
+  },
+  {
     label: "Experience",
     page: "experience",
   },
@@ -89,14 +93,14 @@ export default function Navbar() {
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => setTheme("light")}
-                  className="bg-slate-100 p-2 rounded-xl text-dark-gray hover:text-blue dark:hover:text-blue"
+                  className="bg-slate-100 p-2 rounded-xl text-dark-gray hover:text-blue hover:text-blue"
                 >
                   <RiSunLine size={25} />
                 </button>
               ) : (
                 <button
                   onClick={() => setTheme("dark")}
-                  className="bg-slate-100 p-2 rounded-xl text-dark-gray hover:text-blue dark:hover:text-blue"
+                  className="bg-slate-100 p-2 rounded-xl text-dark-gray hover:text-blue hover:text-blue"
                 >
                   <RiMoonFill size={25} />
                 </button>
