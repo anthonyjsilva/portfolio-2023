@@ -27,7 +27,6 @@ const SectionHeader = ({ text, children, level = 1 }: SectionHeaderProps) => {
       <h3 className="text-center uppercase text-3xl font-extralight tracking-widest m-0">
         {text || children}
       </h3>
-      //   "uppercase text-2xl font-extrabold mb-0"
     );
   }
 };

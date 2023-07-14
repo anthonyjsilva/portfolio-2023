@@ -1,26 +1,5 @@
 import React from "react";
 import SectionHeader from "./SectionHeader";
-import SkillBadge from "./SkillBadge";
-
-const basicSkills = ["html", "css", "tailwind", "materialui", "semanticui"];
-const frontendSkills = [
-  "javascript",
-  "typescript",
-  "react",
-  "redux",
-  // "jest",
-  "nextjs",
-  "nodejs",
-  // "graphql",
-  // "apollo",
-];
-const utilitySkills = [
-  "git",
-  "github",
-  //"figma"
-];
-const backendSkills = ["express", "mustache", "handlebars", "mongodb", "mysql"];
-const miscSkills = ["premiere", "aseprite", "gms", "canva", "garageband"];
 
 const AboutSection = () => {
   return (

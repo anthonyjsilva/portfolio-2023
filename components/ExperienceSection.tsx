@@ -9,8 +9,9 @@ const ExperienceSection = () => {
         <SectionHeader text="Experience 📝" />
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="text-center  ">
+          <div className="text-center">
             <SectionHeader text="Resume" level={2} />
+
             <div className="flex flex-wrap flex-row basis-1/3 justify-center z-10">
               <Image
                 src="/resume.png"
