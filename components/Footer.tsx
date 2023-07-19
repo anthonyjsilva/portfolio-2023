@@ -22,7 +22,7 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
               size={30}
             />
           </a>
@@ -43,14 +43,14 @@ const Footer = () => {
             target="_blank"
           >
             <AiOutlineLinkedin
-              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
               size={30}
             />
           </a>
 
           <a href="mailto:ajsilva@utexas.edu">
             <CgMail
-              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
               size={30}
             />
           </a>

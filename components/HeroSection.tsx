@@ -20,15 +20,16 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="tracking-widest text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
+          <h1 className="text-blue tracking-widest text-4xl font-semibold mt-6 md:mt-0 md:text-7xl">
             {`Hey! 👋`}
           </h1>
-          <p className="tracking-widest font-extralight italic my-8 md:text-2xl leading-loose">
+          <p className="my-8 md:text-2xl leading-loose">
             {`I'm a `}
-            <span className="font-semibold text-blue">
-              {`Frontend Web Developer `}
-            </span>
-            {`based in San Antonio, TX. Creating software that makes a positive
+            <span className="font-bold">{`frontend web developer `}</span>
+            {`based in San Antonio, TX.`}
+          </p>
+          <p className="tracking-widest font-light italic my-8 md:text-2xl leading-loose">
+            {`Creating software that makes a positive
             impact in people's lives.`}
           </p>
 
@@ -39,7 +40,7 @@ const HeroSection = () => {
               target="_blank"
             >
               <AiOutlineGithub
-                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
                 size={50}
               />
             </a>
@@ -50,14 +51,14 @@ const HeroSection = () => {
               target="_blank"
             >
               <AiOutlineLinkedin
-                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+                className="mr-8 hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
                 size={50}
               />
             </a>
 
             <a href="mailto:ajsilva@utexas.edu">
               <CgMail
-                className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue"
+                className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100 hover:text-blue dark:hover:text-blue"
                 size={50}
               />
             </a>

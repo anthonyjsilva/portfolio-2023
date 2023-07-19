@@ -64,7 +64,7 @@ const lesserSkills = [
   "mysql",
   "graphql",
   "apollo",
-  "java",
+  // "java",
 ];
 
 const SkillsSection = () => {

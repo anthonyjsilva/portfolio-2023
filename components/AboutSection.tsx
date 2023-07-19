@@ -8,43 +8,23 @@ const AboutSection = () => {
         <SectionHeader>About 📖</SectionHeader>
 
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-          <div className="md:w-1/2">
+          <div className="md:w-1/2 text-lg">
             <p>
-              Hey, my name is Anthony and I am a{" "}
-              <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in San Antonio, TX.
+              {`In 2017, I graduated from a full-stack coding bootcamp called The Iron Yard in Austin, Texas. Since then, I have been working as a frontend developer specializing in React.`}
             </p>
             <br />
-            <p>
-              In 2017 I graduated from a coding bootcamp called The Iron Yard in
-              Austin TX and have since been working as a Frontend developer
-              specializing in React.
+            <p className="text-xl font-bold">
+              {`I love creating clean user interfaces and working with React component libraries.`}
             </p>
             <br />
-            <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From hiking, traveling, making YouTube videos, I love creating
-              things. I am always seeking new experiences and want continue to
-              push myself to learn new skills.
-            </p>
-            <br />
-            <p>
-              I believe that you should{" "}
-              <span className="font-bold text-blue">
-                never stop pushing yourself
-              </span>{" "}
-              and that&#39;s what I strive to do. I have a passion for learning
-              and a desire to always push the limits of what is possible. I am
-              excited to see where my career takes me and am always open to new
-              opportunities. 🙂
+            <p className="tracking-widest italic">
+              {`I want to continue learning new skills and am excited to see where my career takes me; I'm always open to new opportunities. 🙂`}
             </p>
           </div>
           <div className="md:w-1/2">
             <svg
               id="logo"
-              width={"501px"}
+              width={"400px"}
               className="hidden lg:block lg:relative lg:bottom-8 lg:left-16 lg:z-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512 512"
