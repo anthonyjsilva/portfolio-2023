@@ -25,7 +25,9 @@ const HeroSection = () => {
           </h1>
           <p className="my-8 md:text-2xl leading-loose">
             {`I'm a `}
+            <span className="text-4xl text-blue font-bold">{` { `}</span>
             <span className="font-bold">{`frontend web developer `}</span>
+            <span className="text-4xl text-blue font-bold">{` } `}</span>
             {`based in San Antonio, TX.`}
           </p>
           <p className="tracking-widest font-light italic my-8 md:text-2xl leading-loose">
