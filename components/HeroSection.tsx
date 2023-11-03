@@ -80,7 +80,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-row items-center text-center justify-center cursor-pointer hover:text-blue">
+      {/* <div className="flex flex-row items-center text-center justify-center cursor-pointer hover:text-blue">
         <Link
           to="about"
           activeClass="active"
@@ -91,7 +91,7 @@ const HeroSection = () => {
         >
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
-      </div>
+      </div> */}
     </section>
   );
 };
