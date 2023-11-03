@@ -25,10 +25,10 @@ const NAV_ITEMS: Array<NavItem> = [
     label: "Skills",
     page: "skills",
   },
-  {
-    label: "Experience",
-    page: "experience",
-  },
+  // {
+  //   label: "Experience",
+  //   page: "experience",
+  // },
   {
     label: "Projects",
     page: "projects",
