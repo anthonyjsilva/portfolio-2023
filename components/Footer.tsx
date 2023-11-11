@@ -26,16 +26,6 @@ const Footer = () => {
               size={30}
             />
           </a>
-          {/* <a
-            href="https://twitter.com/hqasmei"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineTwitter
-              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
-              size={30}
-            />
-          </a> */}
 
           <a
             href="https://www.linkedin.com/in/anthonyjsilva/"
@@ -54,17 +44,6 @@ const Footer = () => {
               size={30}
             />
           </a>
-
-          {/* <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <AiOutlineYoutube
-              className="hover:-translate-y-1 transition-transform cursor-pointer dark:text-neutral-100"
-              size={30}
-            />
-          </a> */}
         </div>
       </div>
     </footer>

@@ -66,7 +66,7 @@ const HeroSection = () => {
             </a>
           </div>
 
-          {/* <Link
+          <Link
             to="projects"
             className="uppercase text-white bg-blue font-semibold px-6 py-3 rounded shadow hover:bg-blue-300 cursor-pointer hover:bg-dark-blue"
             activeClass="active"
@@ -75,12 +75,12 @@ const HeroSection = () => {
             offset={-100}
             duration={500}
           >
-            Projects
-          </Link> */}
+            View Projects
+          </Link>
         </div>
       </div>
 
-      {/* <div className="flex flex-row items-center text-center justify-center cursor-pointer hover:text-blue">
+      <div className="flex flex-row items-center text-center justify-center cursor-pointer hover:text-blue">
         <Link
           to="about"
           activeClass="active"
@@ -91,7 +91,7 @@ const HeroSection = () => {
         >
           <HiArrowDown size={35} className="animate-bounce" />
         </Link>
-      </div> */}
+      </div>
     </section>
   );
 };
