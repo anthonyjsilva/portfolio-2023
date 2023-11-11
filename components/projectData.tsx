@@ -20,8 +20,8 @@ export const projectData: Project[] = [
     skills: ["typescript", "react", "chakraui", "tailwind", "vite"],
   },
   {
-    name: "Always Onwards",
-    description: "Minimal blog website using Markdown to write posts.",
+    name: "Minimal blog",
+    description: "Minimal blog using Markdown to write posts.",
     status: "ongoing",
     image: "/minimal-blog.png",
     github: "https://github.com/anthonyjsilva/minimal-blog",
@@ -44,30 +44,30 @@ export const projectData: Project[] = [
     link: "https://anthonyjsilva.github.io/colors/",
     skills: ["react", "css"],
   },
+  // {
+  //   name: "League of Legends Achievements",
+  //   description:
+  //     "3rd party achievement website for League of Legends. (No longer live due to API restrictions)",
+  //   image: "/lol.png",
+  //   github: "https://github.com/anthonyjsilva/achieve-league-of-legends",
+  //   skills: ["nodejs", "express", "mustache", "css"],
+  // },
   {
-    name: "League of Legends Achievements",
-    description:
-      "3rd party achievement website for League of Legends. (No longer live due to API restrictions)",
-    image: "/lol.png",
-    github: "https://github.com/anthonyjsilva/achieve-league-of-legends",
-    skills: ["nodejs", "express", "mustache", "css"],
-  },
-  {
-    name: "Productivity App",
+    name: "Achieve",
     status: "paused",
     description:
       "Gamified productivity app that incentivizes users to complete tasks, goals, and level up their real life skills.",
     image: "/skills.png",
     skills: ["react", "semanticui", "css"],
   },
-  {
-    name: "Pong Game",
-    description: "Browser version of class Pong using HTML 5 Canvas.",
-    image: "/pong.png",
-    github: "https://github.com/anthonyjsilva/pong-html-game",
-    link: "https://anthonyjsilva.github.io/pong-html-game/",
-    skills: ["html", "css", "javascript"],
-  },
+  // {
+  //   name: "Pong Game",
+  //   description: "Browser version of class Pong using HTML 5 Canvas.",
+  //   image: "/pong.png",
+  //   github: "https://github.com/anthonyjsilva/pong-html-game",
+  //   link: "https://anthonyjsilva.github.io/pong-html-game/",
+  //   skills: ["html", "css", "javascript"],
+  // },
   {
     name: "Life's Not Square",
     status: "paused",
@@ -77,7 +77,7 @@ export const projectData: Project[] = [
     skills: ["gms"],
   },
   {
-    name: "This website",
+    name: "This website (anthonyjsilva.com)",
     description:
       "My web development portfolio website, check out the code on github!",
     image: "/portfolio.png",
@@ -89,14 +89,6 @@ export const projectData: Project[] = [
     description: "Minimalist art gallery.",
     image: "/p2.jpg",
     link: "http://vacantbrain.com",
-    skills: ["html", "css"],
-  },
-  {
-    name: "Tailwind Static Site",
-    description: "Tailwind and dark mode practice.",
-    image: "/p3.png",
-    github: "https://github.com/anthonyjsilva/tailwind-css-website",
-    link: "https://anthonyjsilva.github.io/tailwind-css-website/",
-    skills: ["html", "tailwind"],
+    skills: ["typescript", "nextjs", "react", "tailwind", "vercel"],
   },
 ];
