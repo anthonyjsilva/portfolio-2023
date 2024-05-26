@@ -13,16 +13,18 @@ export interface Project {
 
 export const projectData: Project[] = [
   {
-    name: "AFK RPG",
-    status: "current",
-    description: "Simple browser based RPG game that plays for you.",
-    image: "/afkrpg.png",
-    skills: ["typescript", "react", "chakraui", "tailwind", "vite"],
+    name: "Summit",
+    status: "ongoing",
+    description:
+      "Productivity app gamified as hiking that incentivizes users to complete daily goals.",
+    image: "/summit.png",
+    skills: ["typescript", "nextjs", "react", "tailwind", "vercel"],
   },
+
   {
     name: "Minimal blog",
     description: "Minimal blog using Markdown to write posts.",
-    status: "ongoing",
+    status: "done",
     image: "/minimal-blog.png",
     github: "https://github.com/anthonyjsilva/minimal-blog",
     link: "https://blog.anthonyjsilva.com/",
@@ -44,37 +46,13 @@ export const projectData: Project[] = [
     link: "https://anthonyjsilva.github.io/colors/",
     skills: ["react", "css"],
   },
-  // {
-  //   name: "League of Legends Achievements",
-  //   description:
-  //     "3rd party achievement website for League of Legends. (No longer live due to API restrictions)",
-  //   image: "/lol.png",
-  //   github: "https://github.com/anthonyjsilva/achieve-league-of-legends",
-  //   skills: ["nodejs", "express", "mustache", "css"],
-  // },
   {
-    name: "Achieve",
-    status: "paused",
+    name: "League of Legends Achievements",
     description:
-      "Gamified productivity app that incentivizes users to complete tasks, goals, and level up their real life skills.",
-    image: "/skills.png",
-    skills: ["react", "semanticui", "css"],
-  },
-  // {
-  //   name: "Pong Game",
-  //   description: "Browser version of class Pong using HTML 5 Canvas.",
-  //   image: "/pong.png",
-  //   github: "https://github.com/anthonyjsilva/pong-html-game",
-  //   link: "https://anthonyjsilva.github.io/pong-html-game/",
-  //   skills: ["html", "css", "javascript"],
-  // },
-  {
-    name: "Life's Not Square",
-    status: "paused",
-    description: "2D puzzle adventure game with escape the room elements.",
-    image: "/square.png",
-    itch: "https://anthonysilva.itch.io/lifes-not-square",
-    skills: ["gms"],
+      "3rd party achievement website for League of Legends. (No longer live due to API restrictions)",
+    image: "/lol.png",
+    github: "https://github.com/anthonyjsilva/achieve-league-of-legends",
+    skills: ["nodejs", "express", "mustache", "css"],
   },
   {
     name: "This website (anthonyjsilva.com)",
@@ -90,5 +68,28 @@ export const projectData: Project[] = [
     image: "/p2.jpg",
     link: "http://vacantbrain.com",
     skills: ["typescript", "nextjs", "react", "tailwind", "vercel"],
+  },
+  // {
+  //   name: "Pong Game",
+  //   description: "Browser version of class Pong using HTML 5 Canvas.",
+  //   image: "/pong.png",
+  //   github: "https://github.com/anthonyjsilva/pong-html-game",
+  //   link: "https://anthonyjsilva.github.io/pong-html-game/",
+  //   skills: ["html", "css", "javascript"],
+  // },
+  {
+    name: "AFK RPG",
+    status: "paused",
+    description: "Simple browser based RPG game that plays for you.",
+    image: "/afkrpg.png",
+    skills: ["typescript", "react", "chakraui", "tailwind", "vite"],
+  },
+  {
+    name: "Life's Not Square",
+    status: "paused",
+    description: "2D puzzle adventure game with escape the room elements.",
+    image: "/square.png",
+    itch: "https://anthonysilva.itch.io/lifes-not-square",
+    skills: ["gms"],
   },
 ];

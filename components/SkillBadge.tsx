@@ -35,7 +35,7 @@ const SkillBadge: React.FC<SkillBadgeProps> = ({
   const border = {
     big: "border-4",
     regular: "border-2",
-    small: "border-0",
+    small: "border",
   }[size];
 
   const iconSize = {
