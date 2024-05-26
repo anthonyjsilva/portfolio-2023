@@ -62,7 +62,7 @@ const ProjectsSection: React.FC = () => {
                       <div className="flex flex-row justify-center align-bottom space-x-4">
                         {project.github && (
                           <Link
-                            className="flex flex-col grow items-center rounded shadow p-4 hover:text-blue"
+                            className="flex flex-col grow items-center card p-2 hover:text-blue"
                             href={project.github}
                             target="_blank"
                           >
@@ -75,7 +75,7 @@ const ProjectsSection: React.FC = () => {
                         )}
                         {project.itch && (
                           <Link
-                            className="flex flex-col grow items-center rounded shadow p-4 hover:text-blue"
+                            className="flex flex-col grow items-center card p-2 hover:text-blue"
                             href={project.itch}
                             target="_blank"
                           >
@@ -88,7 +88,7 @@ const ProjectsSection: React.FC = () => {
                         )}
                         {project.link && (
                           <Link
-                            className="flex flex-col grow items-center rounded shadow p-4 hover:text-blue"
+                            className="flex flex-col grow items-center card p-2 hover:text-blue"
                             href={project.link}
                             target="_blank"
                           >

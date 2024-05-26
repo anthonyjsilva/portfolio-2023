@@ -89,7 +89,7 @@ export const projectData: Project[] = [
     status: "paused",
     description: "2D puzzle adventure game with escape the room elements.",
     image: "/square.png",
-    itch: "https://anthonysilva.itch.io/lifes-not-square",
+    // itch: "https://anthonysilva.itch.io/lifes-not-square",
     skills: ["gms"],
   },
 ];

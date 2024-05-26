@@ -49,7 +49,7 @@ const StatusBadge: FC<StatusBadgeProps> = ({ className, status = "done" }) => {
     ${className}
     ${color}
     flex items-center justify-center
-    border-dark-gray dark:border-dark-gray shadow py-2 px-4 m-1 rounded font-medium
+    border-dark-gray dark:border-dark-gray card py-2 px-4 m-1 font-medium
   `;
   const iconCls = `mr-4`;
 

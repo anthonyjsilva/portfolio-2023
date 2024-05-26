@@ -7,3 +7,7 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   grid-gap: 10px;
 }
+
+.card {
+  @apply rounded shadow border-0 border-black dark:border-white;
+}
